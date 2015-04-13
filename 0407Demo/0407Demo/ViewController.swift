@@ -224,8 +224,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func addRole(sender: AnyObject) {
-        let normalUserRole = BmobRole(name: "normalUser")
-//        normalUserRole.name = "normalUser"; //(name: "normalUser")
+        let normalUserRole = BmobRole()
+        normalUserRole.name = "normalUser"; //(name: "normalUser")
         
         let normalRelation = BmobRelation()
         

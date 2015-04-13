@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5DA7F1BC9A2B343859108C4D /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5EB42226C9B467F32D6A394 /* Pods-dummy.m */; };
-		BE01E4B71ADB5F2B0094004E /* BmobSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE01E4B61ADB5F2B0094004E /* BmobSDK.framework */; };
+		BE33A0C81ADB9D8B00405276 /* BmobSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE33A0C71ADB9D8B00405276 /* BmobSDK.framework */; };
 		C668769289E73E4D9DA826EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60585C2CA4574EC09ED298BB /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,7 +20,7 @@
 		910F8F1FC3CE6EA3C4CBE061 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
 		9EECB974E96815D1754E2038 /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B10ACD51B6D6013B1D3B0FDA /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BE01E4B61ADB5F2B0094004E /* BmobSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BmobSDK.framework; sourceTree = "<group>"; };
+		BE33A0C71ADB9D8B00405276 /* BmobSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BmobSDK.framework; sourceTree = "<group>"; };
 		C947C3743D5052F891ADBB7E /* Pods-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-environment.h"; sourceTree = "<group>"; };
 		D5EB42226C9B467F32D6A394 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
 		E9EA79C17808B1ED529B7949 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,7 +32,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C668769289E73E4D9DA826EF /* Foundation.framework in Frameworks */,
-				BE01E4B71ADB5F2B0094004E /* BmobSDK.framework in Frameworks */,
+				BE33A0C81ADB9D8B00405276 /* BmobSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +61,7 @@
 		4CE668F035E79D2F1BD1A100 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
+				BE33A0C71ADB9D8B00405276 /* BmobSDK.framework */,
 				60585C2CA4574EC09ED298BB /* Foundation.framework */,
 			);
 			name = iOS;
@@ -92,7 +93,6 @@
 		BB65FB9191BF2EF2641729B0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BE01E4B61ADB5F2B0094004E /* BmobSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
