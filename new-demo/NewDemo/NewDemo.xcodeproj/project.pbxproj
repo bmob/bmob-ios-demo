@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE170B3E1A85D5710021550A /* BmobSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE170B3D1A85D5710021550A /* BmobSDK.framework */; };
+		BE613F201A7C83250052DA5F /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = BE613F1F1A7C83250052DA5F /* Test.m */; };
 		BEA6C2751A5E7D380071DDCF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA6C2741A5E7D380071DDCF /* main.m */; };
 		BEA6C2781A5E7D380071DDCF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA6C2771A5E7D380071DDCF /* AppDelegate.m */; };
 		BEA6C27B1A5E7D380071DDCF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA6C27A1A5E7D380071DDCF /* ViewController.m */; };
@@ -27,7 +29,6 @@
 		BEA6C2AD1A5E7DAF0071DDCF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA6C2AC1A5E7DAF0071DDCF /* CoreGraphics.framework */; };
 		BEA6C2AF1A5E7DB50071DDCF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA6C2AE1A5E7DB50071DDCF /* Security.framework */; };
 		BEA6C2B11A5E7DBE0071DDCF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA6C2B01A5E7DBE0071DDCF /* CoreLocation.framework */; };
-		BEA6C2B31A5E7E010071DDCF /* BmobSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA6C2B21A5E7E010071DDCF /* BmobSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE170B3D1A85D5710021550A /* BmobSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BmobSDK.framework; sourceTree = "<group>"; };
+		BE613F1E1A7C83250052DA5F /* Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
+		BE613F1F1A7C83250052DA5F /* Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		BEA6C26F1A5E7D380071DDCF /* NewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEA6C2731A5E7D380071DDCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEA6C2741A5E7D380071DDCF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -67,7 +71,6 @@
 		BEA6C2AC1A5E7DAF0071DDCF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		BEA6C2AE1A5E7DB50071DDCF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		BEA6C2B01A5E7DBE0071DDCF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		BEA6C2B21A5E7E010071DDCF /* BmobSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BmobSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,7 +83,7 @@
 				BEA6C2AD1A5E7DAF0071DDCF /* CoreGraphics.framework in Frameworks */,
 				BEA6C2AB1A5E7DA50071DDCF /* MobileCoreServices.framework in Frameworks */,
 				BEA6C2A91A5E7D9F0071DDCF /* CFNetwork.framework in Frameworks */,
-				BEA6C2B31A5E7E010071DDCF /* BmobSDK.framework in Frameworks */,
+				BE170B3E1A85D5710021550A /* BmobSDK.framework in Frameworks */,
 				BEA6C2A71A5E7D990071DDCF /* CoreTelephony.framework in Frameworks */,
 				BEA6C2A51A5E7D8E0071DDCF /* SystemConfiguration.framework in Frameworks */,
 				BEA6C2A31A5E7D870071DDCF /* libz.1.2.5.dylib in Frameworks */,
@@ -102,6 +105,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE613F1D1A7C82F20052DA5F /* myBmob */ = {
+			isa = PBXGroup;
+			children = (
+				BE613F1E1A7C83250052DA5F /* Test.h */,
+				BE613F1F1A7C83250052DA5F /* Test.m */,
+			);
+			name = myBmob;
+			sourceTree = "<group>";
+		};
 		BEA6C2661A5E7D380071DDCF = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +148,7 @@
 		BEA6C2711A5E7D380071DDCF /* NewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				BE613F1D1A7C82F20052DA5F /* myBmob */,
 				BEA6C2761A5E7D380071DDCF /* AppDelegate.h */,
 				BEA6C2771A5E7D380071DDCF /* AppDelegate.m */,
 				BEA6C2791A5E7D380071DDCF /* ViewController.h */,
@@ -151,7 +164,7 @@
 		BEA6C2721A5E7D380071DDCF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				BEA6C2B21A5E7E010071DDCF /* BmobSDK.framework */,
+				BE170B3D1A85D5710021550A /* BmobSDK.framework */,
 				BEA6C2731A5E7D380071DDCF /* Info.plist */,
 				BEA6C2741A5E7D380071DDCF /* main.m */,
 			);
@@ -276,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEA6C27B1A5E7D380071DDCF /* ViewController.m in Sources */,
+				BE613F201A7C83250052DA5F /* Test.m in Sources */,
 				BEA6C2781A5E7D380071DDCF /* AppDelegate.m in Sources */,
 				BEA6C2751A5E7D380071DDCF /* main.m in Sources */,
 			);
@@ -353,7 +367,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -388,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -476,6 +490,7 @@
 				BEA6C2941A5E7D380071DDCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEA6C2951A5E7D380071DDCF /* Build configuration list for PBXNativeTarget "NewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +499,7 @@
 				BEA6C2971A5E7D380071DDCF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

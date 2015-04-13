@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import <BmobSDK/Bmob.h>
 
 @interface AppDelegate ()
 
@@ -19,9 +19,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(initSuccessful) name:kBmobInitSuccessNotification object:nil];
     
     return YES;
+}
+
+-(void)initSuccessful{
+    NSLog(@"initSuccessful");
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

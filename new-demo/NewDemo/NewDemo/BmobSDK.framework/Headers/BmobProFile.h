@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+//#import "Config.h"
 #import "BmobConfig.h"
 
 @interface BmobProFile : NSObject
@@ -26,7 +27,7 @@
 /**
  *  上传文件
  *
- *  @param filename      文件名
+ *  @param filename      文件名(带后缀)
  *  @param data          文件的数据
  *  @param block         上传的结果
  *  @param progressBlock 上传的进度
@@ -35,7 +36,6 @@
                      fileData:(NSData *)data
                         block:(BmobFileResultBlock)block
                      progress:(BmobProgressBlock)progressBlock;
-
 
 /**
  *  批量上传文件
@@ -104,4 +104,21 @@
                                  width:(CGFloat)w
                                 height:(CGFloat)h
                            resultBlock:(BmobLocalImageResultBlock)block;
+
+/**
+ *  开启安全验证后的url签名
+ *
+ *  @param filename  文件名
+ *  @param urlString 文件的url地址
+ *  @param validTime 有效时间 单位：秒
+ *  @param a         accessKey
+ *  @param s         secretKey
+ *
+ *  @return 签名后的url地址
+ */
++(NSString *)signUrlWithFilename:(NSString *)filename
+                             url:(NSString *)urlString
+                       validTime:(int)validTime
+                       accessKey:(NSString *)a
+                       secretKey:(NSString *)s;
 @end
