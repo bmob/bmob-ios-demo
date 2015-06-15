@@ -149,7 +149,7 @@
     NSString *mobilePhoneNumber = self.mobilePhoneNumberTf.text;
     
     //请求验证码
-    [BmobMessage requestSMSCodeInBackgroundWithPhoneNumber:mobilePhoneNumber andTemplate:@"test" resultBlock:^(int number, NSError *error) {
+    [BmobSMS requestSMSCodeInBackgroundWithPhoneNumber:mobilePhoneNumber andTemplate:@"test" resultBlock:^(int number, NSError *error) {
         if (error) {
             NSLog(@"%@",error);
             UIAlertView *tip = [[UIAlertView alloc] initWithTitle:nil message:@"请输入正确的手机号码" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
@@ -181,19 +181,6 @@
         }
     }];
     
-    
-//    //验证
-//    [BmobMessage verifySMSCodeInBackgroundWithPhoneNumber:mobilePhoneNumber andSMSCode:smsCode resultBlock:^(BOOL isSuccessful, NSError *error) {
-//        if (isSuccessful) {
-//            //跳转
-//            FirstPageViewController *firstPageViewController = [[FirstPageViewController alloc] init];
-//            [self.navigationController pushViewController:firstPageViewController animated:NO];
-//        } else {
-//            NSLog(@"%@",error);
-//            UIAlertView *tip = [[UIAlertView alloc] initWithTitle:nil message:@"验证码有误" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-//            [tip show];
-//        }
-//    }];
 }
 
 

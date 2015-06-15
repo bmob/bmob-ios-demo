@@ -171,7 +171,7 @@
     NSString *mobilePhoneNumber = user.mobilePhoneNumber;
     
     //请求验证码
-    [BmobMessage requestSMSCodeInBackgroundWithPhoneNumber:mobilePhoneNumber andTemplate:@"test" resultBlock:^(int number, NSError *error) {
+    [BmobSMS requestSMSCodeInBackgroundWithPhoneNumber:mobilePhoneNumber andTemplate:@"test" resultBlock:^(int number, NSError *error) {
         if (error) {
             NSLog(@"%@",error);
         } else {

@@ -146,7 +146,7 @@
     NSString *mobilePhoneNumber = self.mobilePhoneNumberTf.text;
     
     //请求验证码
-    [BmobMessage requestSMSCodeInBackgroundWithPhoneNumber:mobilePhoneNumber andTemplate:@"test" resultBlock:^(int number, NSError *error) {
+    [BmobSMS requestSMSCodeInBackgroundWithPhoneNumber:mobilePhoneNumber andTemplate:@"test" resultBlock:^(int number, NSError *error) {
         if (error) {
             NSLog(@"%@",error);
             UIAlertView *tip = [[UIAlertView alloc] initWithTitle:nil message:@"请输入正确的手机号码" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
@@ -166,7 +166,7 @@
     NSString *smsCode = self.smsCodeTf.text;
     
     //验证
-    [BmobMessage verifySMSCodeInBackgroundWithPhoneNumber:mobilePhoneNumber andSMSCode:smsCode resultBlock:^(BOOL isSuccessful, NSError *error) {
+    [BmobSMS verifySMSCodeInBackgroundWithPhoneNumber:mobilePhoneNumber andSMSCode:smsCode resultBlock:^(BOOL isSuccessful, NSError *error) {
         if (isSuccessful) {
             
             //修改绑定手机

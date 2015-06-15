@@ -23,9 +23,9 @@
 		DA36832D1B21A82A00DAD931 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA36832C1B21A82A00DAD931 /* AppDelegate.m */; };
 		DA3683351B21A82A00DAD931 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA3683341B21A82A00DAD931 /* Images.xcassets */; };
 		DA3683441B21A82A00DAD931 /* BmobSmsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3683431B21A82A00DAD931 /* BmobSmsDemoTests.m */; };
-		DA7998FE1B2AC87E00FB69AA /* BmobSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7998FD1B2AC87E00FB69AA /* BmobSDK.framework */; };
 		DA7C7E831B259E3800E547DF /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7C7E811B259E3800E547DF /* LoginViewController.m */; };
 		DA7C7E841B259E3800E547DF /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7C7E821B259E3800E547DF /* LoginViewController.xib */; };
+		DAEBD1021B2E7EA5009971A1 /* BmobSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEBD1011B2E7EA5009971A1 /* BmobSDK.framework */; };
 		DAFB668B1B26BFC1002A2BCA /* FirstPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB668A1B26BFC1002A2BCA /* FirstPageViewController.m */; };
 		DAFB668E1B26C1A6002A2BCA /* SmsCodeRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB668D1B26C1A6002A2BCA /* SmsCodeRegisterViewController.m */; };
 		DAFB66911B26C20A002A2BCA /* BindMobilePhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFB66901B26C20A002A2BCA /* BindMobilePhoneViewController.m */; };
@@ -64,10 +64,10 @@
 		DA36833D1B21A82A00DAD931 /* BmobSmsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BmobSmsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3683421B21A82A00DAD931 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA3683431B21A82A00DAD931 /* BmobSmsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BmobSmsDemoTests.m; sourceTree = "<group>"; };
-		DA7998FD1B2AC87E00FB69AA /* BmobSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BmobSDK.framework; path = ../BmobSDK.framework; sourceTree = "<group>"; };
 		DA7C7E801B259E3800E547DF /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		DA7C7E811B259E3800E547DF /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		DA7C7E821B259E3800E547DF /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		DAEBD1011B2E7EA5009971A1 /* BmobSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BmobSDK.framework; sourceTree = "<group>"; };
 		DAFB66891B26BFC1002A2BCA /* FirstPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstPageViewController.h; sourceTree = "<group>"; };
 		DAFB668A1B26BFC1002A2BCA /* FirstPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstPageViewController.m; sourceTree = "<group>"; };
 		DAFB668C1B26C1A6002A2BCA /* SmsCodeRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SmsCodeRegisterViewController.h; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 				DA08730D1B252ED60051150A /* CFNetwork.framework in Frameworks */,
 				DA0873101B252ED60051150A /* Security.framework in Frameworks */,
 				DA08730C1B252ED60051150A /* CoreTelephony.framework in Frameworks */,
-				DA7998FE1B2AC87E00FB69AA /* BmobSDK.framework in Frameworks */,
+				DAEBD1021B2E7EA5009971A1 /* BmobSDK.framework in Frameworks */,
 				DA0873061B252ED60051150A /* MediaPlayer.framework in Frameworks */,
 				DA08730A1B252ED60051150A /* libz.1.2.5.dylib in Frameworks */,
 				DA08730E1B252ED60051150A /* MobileCoreServices.framework in Frameworks */,
@@ -152,7 +152,7 @@
 		DA3683271B21A82A00DAD931 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DA7998FD1B2AC87E00FB69AA /* BmobSDK.framework */,
+				DAEBD1011B2E7EA5009971A1 /* BmobSDK.framework */,
 				DA0872FA1B252ED60051150A /* MediaPlayer.framework */,
 				DA0872FB1B252ED60051150A /* AVFoundation.framework */,
 				DA0872FC1B252ED60051150A /* libsqlite3.dylib */,

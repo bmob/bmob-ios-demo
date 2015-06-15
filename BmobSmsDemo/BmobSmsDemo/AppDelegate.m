@@ -21,7 +21,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-     [Bmob registerWithAppKey:@"aaeae0170d0accf9f3feb5b96c1d62ea"];
+     [Bmob registerWithAppKey:@""];
     //用导致视图时需要添加对应的导航视图控制器
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
    
