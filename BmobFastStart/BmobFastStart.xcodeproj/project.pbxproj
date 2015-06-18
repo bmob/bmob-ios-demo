@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE31D23D192AFAF700316AEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE31D23C192AFAF700316AEC /* Foundation.framework */; };
+		BE31D23F192AFAF700316AEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE31D23E192AFAF700316AEC /* CoreGraphics.framework */; };
+		BE31D241192AFAF700316AEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE31D240192AFAF700316AEC /* UIKit.framework */; };
+		BE31D247192AFAF700316AEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE31D245192AFAF700316AEC /* InfoPlist.strings */; };
+		BE31D249192AFAF700316AEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE31D248192AFAF700316AEC /* main.m */; };
+		BE31D24D192AFAF700316AEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE31D24C192AFAF700316AEC /* AppDelegate.m */; };
+		BE31D24F192AFAF700316AEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE31D24E192AFAF700316AEC /* Images.xcassets */; };
+		BE31D256192AFAF700316AEC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE31D255192AFAF700316AEC /* XCTest.framework */; };
+		BE31D257192AFAF700316AEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE31D23C192AFAF700316AEC /* Foundation.framework */; };
+		BE31D258192AFAF700316AEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE31D240192AFAF700316AEC /* UIKit.framework */; };
+		BE31D260192AFAF700316AEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE31D25E192AFAF700316AEC /* InfoPlist.strings */; };
+		BE31D262192AFAF700316AEC /* BmobFastStartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE31D261192AFAF700316AEC /* BmobFastStartTests.m */; };
+		BE31D26C192AFB4100316AEC /* BmobSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE31D26B192AFB4100316AEC /* BmobSDK.framework */; };
+		BE31D26E192AFB5100316AEC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE31D26D192AFB5100316AEC /* CoreLocation.framework */; };
+		BE31D270192AFC7400316AEC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE31D26F192AFC7400316AEC /* Security.framework */; };
+		BE31D272192AFC8100316AEC /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE31D271192AFC8100316AEC /* MobileCoreServices.framework */; };
+		BE31D274192AFC8800316AEC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE31D273192AFC8800316AEC /* CFNetwork.framework */; };
+		BE31D276192AFC9200316AEC /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE31D275192AFC9200316AEC /* CoreTelephony.framework */; };
+		BE31D278192AFC9B00316AEC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE31D277192AFC9B00316AEC /* SystemConfiguration.framework */; };
+		BE31D27A192AFCA000316AEC /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BE31D279192AFCA000316AEC /* libz.1.2.5.dylib */; };
+		BE31D27E192AFCBC00316AEC /* FastStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE31D27D192AFCBC00316AEC /* FastStartViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE31D259192AFAF700316AEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE31D231192AFAF700316AEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE31D238192AFAF700316AEC;
+			remoteInfo = BmobFastStart;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BE31D239192AFAF700316AEC /* BmobFastStart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BmobFastStart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE31D23C192AFAF700316AEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BE31D23E192AFAF700316AEC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BE31D240192AFAF700316AEC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BE31D244192AFAF700316AEC /* BmobFastStart-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BmobFastStart-Info.plist"; sourceTree = "<group>"; };
+		BE31D246192AFAF700316AEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BE31D248192AFAF700316AEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE31D24A192AFAF700316AEC /* BmobFastStart-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BmobFastStart-Prefix.pch"; sourceTree = "<group>"; };
+		BE31D24B192AFAF700316AEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE31D24C192AFAF700316AEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE31D24E192AFAF700316AEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BE31D254192AFAF700316AEC /* BmobFastStartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BmobFastStartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE31D255192AFAF700316AEC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BE31D25D192AFAF700316AEC /* BmobFastStartTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BmobFastStartTests-Info.plist"; sourceTree = "<group>"; };
+		BE31D25F192AFAF700316AEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BE31D261192AFAF700316AEC /* BmobFastStartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BmobFastStartTests.m; sourceTree = "<group>"; };
+		BE31D26B192AFB4100316AEC /* BmobSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BmobSDK.framework; sourceTree = "<group>"; };
+		BE31D26D192AFB5100316AEC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BE31D26F192AFC7400316AEC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		BE31D271192AFC8100316AEC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BE31D273192AFC8800316AEC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		BE31D275192AFC9200316AEC /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		BE31D277192AFC9B00316AEC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BE31D279192AFCA000316AEC /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		BE31D27C192AFCBC00316AEC /* FastStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FastStartViewController.h; sourceTree = "<group>"; };
+		BE31D27D192AFCBC00316AEC /* FastStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FastStartViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE31D236192AFAF700316AEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE31D27A192AFCA000316AEC /* libz.1.2.5.dylib in Frameworks */,
+				BE31D278192AFC9B00316AEC /* SystemConfiguration.framework in Frameworks */,
+				BE31D276192AFC9200316AEC /* CoreTelephony.framework in Frameworks */,
+				BE31D274192AFC8800316AEC /* CFNetwork.framework in Frameworks */,
+				BE31D272192AFC8100316AEC /* MobileCoreServices.framework in Frameworks */,
+				BE31D23F192AFAF700316AEC /* CoreGraphics.framework in Frameworks */,
+				BE31D270192AFC7400316AEC /* Security.framework in Frameworks */,
+				BE31D26E192AFB5100316AEC /* CoreLocation.framework in Frameworks */,
+				BE31D241192AFAF700316AEC /* UIKit.framework in Frameworks */,
+				BE31D23D192AFAF700316AEC /* Foundation.framework in Frameworks */,
+				BE31D26C192AFB4100316AEC /* BmobSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE31D251192AFAF700316AEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE31D256192AFAF700316AEC /* XCTest.framework in Frameworks */,
+				BE31D258192AFAF700316AEC /* UIKit.framework in Frameworks */,
+				BE31D257192AFAF700316AEC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE31D230192AFAF700316AEC = {
+			isa = PBXGroup;
+			children = (
+				BE31D242192AFAF700316AEC /* BmobFastStart */,
+				BE31D25B192AFAF700316AEC /* BmobFastStartTests */,
+				BE31D23B192AFAF700316AEC /* Frameworks */,
+				BE31D23A192AFAF700316AEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE31D23A192AFAF700316AEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE31D239192AFAF700316AEC /* BmobFastStart.app */,
+				BE31D254192AFAF700316AEC /* BmobFastStartTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE31D23B192AFAF700316AEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE31D279192AFCA000316AEC /* libz.1.2.5.dylib */,
+				BE31D277192AFC9B00316AEC /* SystemConfiguration.framework */,
+				BE31D275192AFC9200316AEC /* CoreTelephony.framework */,
+				BE31D273192AFC8800316AEC /* CFNetwork.framework */,
+				BE31D271192AFC8100316AEC /* MobileCoreServices.framework */,
+				BE31D26F192AFC7400316AEC /* Security.framework */,
+				BE31D26D192AFB5100316AEC /* CoreLocation.framework */,
+				BE31D23C192AFAF700316AEC /* Foundation.framework */,
+				BE31D23E192AFAF700316AEC /* CoreGraphics.framework */,
+				BE31D240192AFAF700316AEC /* UIKit.framework */,
+				BE31D255192AFAF700316AEC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE31D242192AFAF700316AEC /* BmobFastStart */ = {
+			isa = PBXGroup;
+			children = (
+				BE31D24B192AFAF700316AEC /* AppDelegate.h */,
+				BE31D24C192AFAF700316AEC /* AppDelegate.m */,
+				BE31D27B192AFCA600316AEC /* viewcontroller */,
+				BE31D24E192AFAF700316AEC /* Images.xcassets */,
+				BE31D243192AFAF700316AEC /* Supporting Files */,
+			);
+			path = BmobFastStart;
+			sourceTree = "<group>";
+		};
+		BE31D243192AFAF700316AEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE31D26B192AFB4100316AEC /* BmobSDK.framework */,
+				BE31D244192AFAF700316AEC /* BmobFastStart-Info.plist */,
+				BE31D245192AFAF700316AEC /* InfoPlist.strings */,
+				BE31D248192AFAF700316AEC /* main.m */,
+				BE31D24A192AFAF700316AEC /* BmobFastStart-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE31D25B192AFAF700316AEC /* BmobFastStartTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE31D261192AFAF700316AEC /* BmobFastStartTests.m */,
+				BE31D25C192AFAF700316AEC /* Supporting Files */,
+			);
+			path = BmobFastStartTests;
+			sourceTree = "<group>";
+		};
+		BE31D25C192AFAF700316AEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE31D25D192AFAF700316AEC /* BmobFastStartTests-Info.plist */,
+				BE31D25E192AFAF700316AEC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE31D27B192AFCA600316AEC /* viewcontroller */ = {
+			isa = PBXGroup;
+			children = (
+				BE31D27C192AFCBC00316AEC /* FastStartViewController.h */,
+				BE31D27D192AFCBC00316AEC /* FastStartViewController.m */,
+			);
+			name = viewcontroller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE31D238192AFAF700316AEC /* BmobFastStart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE31D265192AFAF700316AEC /* Build configuration list for PBXNativeTarget "BmobFastStart" */;
+			buildPhases = (
+				BE31D235192AFAF700316AEC /* Sources */,
+				BE31D236192AFAF700316AEC /* Frameworks */,
+				BE31D237192AFAF700316AEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BmobFastStart;
+			productName = BmobFastStart;
+			productReference = BE31D239192AFAF700316AEC /* BmobFastStart.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE31D253192AFAF700316AEC /* BmobFastStartTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE31D268192AFAF700316AEC /* Build configuration list for PBXNativeTarget "BmobFastStartTests" */;
+			buildPhases = (
+				BE31D250192AFAF700316AEC /* Sources */,
+				BE31D251192AFAF700316AEC /* Frameworks */,
+				BE31D252192AFAF700316AEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE31D25A192AFAF700316AEC /* PBXTargetDependency */,
+			);
+			name = BmobFastStartTests;
+			productName = BmobFastStartTests;
+			productReference = BE31D254192AFAF700316AEC /* BmobFastStartTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE31D231192AFAF700316AEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = bmob;
+				TargetAttributes = {
+					BE31D253192AFAF700316AEC = {
+						TestTargetID = BE31D238192AFAF700316AEC;
+					};
+				};
+			};
+			buildConfigurationList = BE31D234192AFAF700316AEC /* Build configuration list for PBXProject "BmobFastStart" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BE31D230192AFAF700316AEC;
+			productRefGroup = BE31D23A192AFAF700316AEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE31D238192AFAF700316AEC /* BmobFastStart */,
+				BE31D253192AFAF700316AEC /* BmobFastStartTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE31D237192AFAF700316AEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE31D247192AFAF700316AEC /* InfoPlist.strings in Resources */,
+				BE31D24F192AFAF700316AEC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE31D252192AFAF700316AEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE31D260192AFAF700316AEC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE31D235192AFAF700316AEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE31D24D192AFAF700316AEC /* AppDelegate.m in Sources */,
+				BE31D27E192AFCBC00316AEC /* FastStartViewController.m in Sources */,
+				BE31D249192AFAF700316AEC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE31D250192AFAF700316AEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE31D262192AFAF700316AEC /* BmobFastStartTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE31D25A192AFAF700316AEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE31D238192AFAF700316AEC /* BmobFastStart */;
+			targetProxy = BE31D259192AFAF700316AEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE31D245192AFAF700316AEC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE31D246192AFAF700316AEC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BE31D25E192AFAF700316AEC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE31D25F192AFAF700316AEC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE31D263192AFAF700316AEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BE31D264192AFAF700316AEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE31D266192AFAF700316AEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BmobFastStart",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BmobFastStart/BmobFastStart-Prefix.pch";
+				INFOPLIST_FILE = "BmobFastStart/BmobFastStart-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BE31D267192AFAF700316AEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BmobFastStart",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BmobFastStart/BmobFastStart-Prefix.pch";
+				INFOPLIST_FILE = "BmobFastStart/BmobFastStart-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BE31D269192AFAF700316AEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BmobFastStart.app/BmobFastStart";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BmobFastStart/BmobFastStart-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BmobFastStartTests/BmobFastStartTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BE31D26A192AFAF700316AEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BmobFastStart.app/BmobFastStart";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BmobFastStart/BmobFastStart-Prefix.pch";
+				INFOPLIST_FILE = "BmobFastStartTests/BmobFastStartTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE31D234192AFAF700316AEC /* Build configuration list for PBXProject "BmobFastStart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE31D263192AFAF700316AEC /* Debug */,
+				BE31D264192AFAF700316AEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE31D265192AFAF700316AEC /* Build configuration list for PBXNativeTarget "BmobFastStart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE31D266192AFAF700316AEC /* Debug */,
+				BE31D267192AFAF700316AEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BE31D268192AFAF700316AEC /* Build configuration list for PBXNativeTarget "BmobFastStartTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE31D269192AFAF700316AEC /* Debug */,
+				BE31D26A192AFAF700316AEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE31D231192AFAF700316AEC /* Project object */;
+}
