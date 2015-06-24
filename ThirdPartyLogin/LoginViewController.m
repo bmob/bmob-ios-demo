@@ -69,21 +69,30 @@
 }
 
 - (IBAction)weiboLogin:(id)sender {
-    //向新浪发送请求
-    WBAuthorizeRequest *request = [WBAuthorizeRequest request];
-    request.redirectURI = @"https://api.weibo.com/oauth2/default.html";
-    request.scope = @"all";
-    [WeiboSDK sendRequest:request];
+    if([WeiboSDK isWeiboAppInstalled]){
+        //向新浪发送请求
+        WBAuthorizeRequest *request = [WBAuthorizeRequest request];
+        request.redirectURI = @"https://api.weibo.com/oauth2/default.html";
+        request.scope = @"all";
+        [WeiboSDK sendRequest:request];
+    } else {
+        [CheckUtil showAlertWithMessage:@"没有安装微博客户端" delegate:self];
+    }
 }
 
 - (IBAction)qqLogin:(id)sender {
-    //注册
-    _tencentOAuth = [[TencentOAuth alloc] initWithAppId:@"1104720526" andDelegate:self];
-    //授权
-    NSArray *permissions = [NSArray arrayWithObjects:kOPEN_PERMISSION_GET_INFO,nil];
-    [_tencentOAuth authorize:permissions inSafari:NO];
-    //获取用户信息
-    [_tencentOAuth getUserInfo];
+    if ([TencentOAuth iphoneQQInstalled]) {
+        //注册
+        _tencentOAuth = [[TencentOAuth alloc] initWithAppId:@"1104720526" andDelegate:self];
+        //授权
+        NSArray *permissions = [NSArray arrayWithObjects:kOPEN_PERMISSION_GET_INFO,nil];
+        [_tencentOAuth authorize:permissions inSafari:NO];
+        //获取用户信息
+        [_tencentOAuth getUserInfo];
+    } else {
+        [CheckUtil showAlertWithMessage:@"没有安装qq客户端" delegate:self];
+    }
+
 }
 
 - (void)tencentDidLogin{
@@ -111,7 +120,7 @@
             }
         }];
     }
-
+    
 }
 
 - (void)tencentDidNotLogin:(BOOL)cancelled{
@@ -121,9 +130,13 @@
 }
 
 - (IBAction)weixinLogin:(id)sender {
-    SendAuthReq* req =[[SendAuthReq alloc ] init];
-    req.scope = @"snsapi_userinfo,snsapi_base";
-    req.state = @"0744" ;
-    [WXApi sendReq:req];
+    if ([WXApi isWXAppInstalled]){
+        SendAuthReq* req =[[SendAuthReq alloc ] init];
+        req.scope = @"snsapi_userinfo,snsapi_base";
+        req.state = @"0744" ;
+        [WXApi sendReq:req];
+    } else {
+        [CheckUtil showAlertWithMessage:@"没有安装微信客户端" delegate:self];
+    }
 }
 @end

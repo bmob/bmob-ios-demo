@@ -569,6 +569,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ThirdPartyLogin",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -587,6 +588,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/ThirdPartyLogin",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
