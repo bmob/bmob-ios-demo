@@ -16,7 +16,7 @@
 
 @implementation ViewController
 
-# pragma mark 新文件管理
+# pragma mark - 新文件管理
 
 - (IBAction)newUploadFileBtn:(id)sender {    
     //构造文件路径
@@ -24,8 +24,10 @@
     NSString *path       = [mainBundle bundlePath];
     path                 = [path stringByAppendingPathComponent:@"image.jpg"];
     
+    NSLog(@"%i",[[NSFileManager defaultManager] fileExistsAtPath:path]); 
+    
     //上传文件
-    [BmobProFile uploadFileWithPath:path block:^(BOOL isSuccessful, NSError *error, NSString *filename, NSString *url) {
+    [BmobProFile uploadFileWithPath:path block:^(BOOL isSuccessful, NSError *error, NSString *filename, NSString *url,BmobFile *bmobFile) {
         if (isSuccessful) {
 //            //上传文件后将返回的文件名及url进行保存
 //            BmobObject *file = [BmobObject objectWithClassName:@"filedemoNewFileRecord"];
@@ -46,6 +48,10 @@
             //上传成功后返回文件名及url
             NSLog(@"filename:%@",filename);
             NSLog(@"url:%@",url);
+            NSLog(@"bmobFile:%@\n",bmobFile);
+            NSLog(@"error%@",error);
+            
+
         } else{
             if(error){
                 NSLog(@"error%@",error);
@@ -63,12 +69,14 @@
     NSData *data = [NSData dataWithContentsOfFile:[mainBundlePath stringByAppendingPathComponent:@"image.jpg"]];
     
     //上传文件
-    [BmobProFile uploadFileWithFilename:@"image.jpg" fileData:data block:^(BOOL isSuccessful, NSError *error, NSString *filename, NSString *url) {
+    [BmobProFile uploadFileWithFilename:@"image.jpg" fileData:data block:^(BOOL isSuccessful, NSError *error, NSString *filename, NSString *url,BmobFile *bmobFile) {
         if (isSuccessful) {
             //打印文件名
             NSLog(@"filename %@",filename);
             //打印url
             NSLog(@"url %@",url);
+            NSLog(@"bmobFile%@\n",bmobFile);
+        
         } else {
             if (error) {
                 NSLog(@"error %@",error);
@@ -90,9 +98,12 @@
     NSArray *array = @[path1,path2,path3];
     
     //上传文件
-    [BmobProFile uploadFilesWithPaths:array resultBlock:^(NSArray *pathArray, NSArray *urlArray, NSError *error) {
+    [BmobProFile uploadFilesWithPaths:array resultBlock:^(NSArray *pathArray, NSArray *urlArray, NSArray *bmobFileArray,NSError *error) {
         //路径数组和url数组（url数组里面的元素为NSString）
         NSLog(@"urlArray %@ urlArray %@",pathArray,urlArray);
+        for (BmobFile* bmobFile in bmobFileArray ) {
+            NSLog(@"%@",bmobFile);
+        }
     } progress:^(NSUInteger index, CGFloat progress) {
         //index表示正在上传的文件其路径在数组当中的索引，progress表示该文件的上传进度
         NSLog(@"index %lu progress %f",(unsigned long)index,progress);
@@ -118,12 +129,15 @@
     NSArray *array = @[dic1,dic2,dic3];
     
     //上传文件，dataArray 数组中存放NSDictionary，NSDictionary里面的格式为@{@"filename":@"你的文件名",@"data":文件的data}
-    [BmobProFile uploadFilesWithDatas:array resultBlock:^(NSArray *filenameArray, NSArray *urlArray, NSError *error) {
+    [BmobProFile uploadFilesWithDatas:array resultBlock:^(NSArray *filenameArray, NSArray *urlArray,NSArray *bmobFileArray, NSError *error) {
         if (error) {
             NSLog(@"%@",error);
         } else {
             //路径数组和url数组（url数组里面的元素为NSString）
             NSLog(@"fileArray %@ urlArray %@",filenameArray,urlArray);
+            for (BmobFile* bmobFile in bmobFileArray ) {
+                NSLog(@"%@",bmobFile);
+            }
         }
     } progress:^(NSUInteger index, CGFloat progress) {
         //index表示正在上传的文件其路径在数组当中的索引，progress表示该文件的上传进度
@@ -155,10 +169,28 @@
     NSLog(@"%@",signUrl);
 }
 
+- (IBAction)getAcessUrlBtn:(id)sender {
+    [BmobProFile getFileAcessUrlWithFileName:@"78034E68460F4F2DBD244B5666717907.jpg" callBack:^(BmobFile *file, NSError *error) {
+        if (error) {
+            NSLog(@"%@",error);
+        } else {
+            NSLog(@"%@",file);
+        }
+    }];
+}
+
+- (IBAction)delFileBtn:(id)sender {
+    [BmobProFile deleteFileWithFileName:@"78034E68460F4F2DBD244B5666717907.jpg" callBack:^(BOOL isSuccessful, NSError *error) {
+        if (isSuccessful) {
+            NSLog(@"delete successfully");
+        } else {
+            NSLog(@"%@",error);
+        }
+    }];
+}
 
 
-
-# pragma mark 旧文件管理
+# pragma mark - 旧文件管理
 - (IBAction)synUploadFileBtn:(UIButton *)sender {
     //获取Document路径
     NSArray *paths=NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);

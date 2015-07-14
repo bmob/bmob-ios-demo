@@ -33,7 +33,13 @@ typedef enum {
     BmobErrorTypeInitNotFinish       = 20022, //初始化未完成
     BmobErrorTypeInitFailed          = 20023, //初始化失败
     BmobErrorTypeErrorFormat         = 20024, //批量文件上传时格式错误
-    BmobErrorTypeNullClassName       = 20025  //表名为空
+    BmobErrorTypeNullClassName       = 20025,  //表名为空
+    BmobErrorTypeNullBlock           = 20026,  //异步查询时，没有传入block，无法返回结果
+    BmobErrorTypeErrorPara           = 20027,  //传的参数有错，一般是传入空字符串造成
+    BmobErrorTypeInvalidMobilePhoneNumber = 20028,  //非法手机号
+    BmobErrorTypeInvalidSMSCode      = 20029,   //非法验证码
+    BmobErrorTypeFileNotExist        = 20030   //获取文件url、删除文件时传入的文件名不存在
+    
 }BmobErrorType;
 
 

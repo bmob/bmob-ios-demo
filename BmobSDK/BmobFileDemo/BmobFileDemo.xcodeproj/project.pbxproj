@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA0D318B1B09E1D300ECD2A9 /* xuanchuan.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DA0D318A1B09E1D300ECD2A9 /* xuanchuan.mp4 */; };
+		DA8530481B549AB000ABF896 /* BmobSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA8530471B549AB000ABF896 /* BmobSDK.framework */; };
 		DAA6865B1AEFB18B001576F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA6865A1AEFB18B001576F7 /* main.m */; };
 		DAA6865E1AEFB18B001576F7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA6865D1AEFB18B001576F7 /* AppDelegate.m */; };
 		DAA686611AEFB18B001576F7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA686601AEFB18B001576F7 /* ViewController.m */; };
@@ -29,7 +31,7 @@
 		DAA686D21AF0AE22001576F7 /* text.txt in Resources */ = {isa = PBXBuildFile; fileRef = DAA686D11AF0AE22001576F7 /* text.txt */; };
 		DAA686D91AF0C9BF001576F7 /* zipfile.zip in Resources */ = {isa = PBXBuildFile; fileRef = DAA686D81AF0C9BF001576F7 /* zipfile.zip */; };
 		DAA686DB1AF0CCE9001576F7 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DAA686DA1AF0CCE9001576F7 /* image.jpg */; };
-		DAEEE9A31AF74FFB000E9ED2 /* BmobSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAEEE9A21AF74FFB000E9ED2 /* BmobSDK.framework */; };
+		DADC11741B09814C002A8E88 /* Android_SDK.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = DADC11731B09814C002A8E88 /* Android_SDK.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA0D318A1B09E1D300ECD2A9 /* xuanchuan.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = xuanchuan.mp4; sourceTree = "<group>"; };
+		DA8530471B549AB000ABF896 /* BmobSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BmobSDK.framework; sourceTree = "<group>"; };
 		DAA686551AEFB18B001576F7 /* BmobFileDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BmobFileDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA686591AEFB18B001576F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAA6865A1AEFB18B001576F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -71,7 +75,8 @@
 		DAA686D11AF0AE22001576F7 /* text.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = text.txt; sourceTree = "<group>"; };
 		DAA686D81AF0C9BF001576F7 /* zipfile.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = zipfile.zip; sourceTree = "<group>"; };
 		DAA686DA1AF0CCE9001576F7 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
-		DAEEE9A21AF74FFB000E9ED2 /* BmobSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BmobSDK.framework; sourceTree = "<group>"; };
+		DADC11721B097DC0002A8E88 /* Android_SDK.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Android_SDK.mp4; sourceTree = "<group>"; };
+		DADC11731B09814C002A8E88 /* Android_SDK.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Android_SDK.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +90,7 @@
 				DAA686921AEFB1CD001576F7 /* CFNetwork.framework in Frameworks */,
 				DAA686951AEFB1CD001576F7 /* Security.framework in Frameworks */,
 				DAA686911AEFB1CD001576F7 /* CoreTelephony.framework in Frameworks */,
-				DAEEE9A31AF74FFB000E9ED2 /* BmobSDK.framework in Frameworks */,
+				DA8530481B549AB000ABF896 /* BmobSDK.framework in Frameworks */,
 				DAA6868B1AEFB1CD001576F7 /* MediaPlayer.framework in Frameworks */,
 				DAA6868F1AEFB1CD001576F7 /* libz.1.2.5.dylib in Frameworks */,
 				DAA686931AEFB1CD001576F7 /* MobileCoreServices.framework in Frameworks */,
@@ -142,7 +147,7 @@
 		DAA686581AEFB18B001576F7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				DAEEE9A21AF74FFB000E9ED2 /* BmobSDK.framework */,
+				DA8530471B549AB000ABF896 /* BmobSDK.framework */,
 				DAA6867F1AEFB1CD001576F7 /* MediaPlayer.framework */,
 				DAA686801AEFB1CD001576F7 /* AVFoundation.framework */,
 				DAA686811AEFB1CD001576F7 /* libsqlite3.dylib */,
@@ -184,6 +189,9 @@
 				DAA686DA1AF0CCE9001576F7 /* image.jpg */,
 				DAA686D81AF0C9BF001576F7 /* zipfile.zip */,
 				DAA686D11AF0AE22001576F7 /* text.txt */,
+				DADC11731B09814C002A8E88 /* Android_SDK.mp4 */,
+				DADC11721B097DC0002A8E88 /* Android_SDK.mp4 */,
+				DA0D318A1B09E1D300ECD2A9 /* xuanchuan.mp4 */,
 			);
 			name = UploadFile;
 			sourceTree = "<group>";
@@ -237,9 +245,11 @@
 				TargetAttributes = {
 					DAA686541AEFB18B001576F7 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = ZVBJ5UPUFX;
 					};
 					DAA6866D1AEFB18C001576F7 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = ZVBJ5UPUFX;
 						TestTargetID = DAA686541AEFB18B001576F7;
 					};
 				};
@@ -269,11 +279,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA686DB1AF0CCE9001576F7 /* image.jpg in Resources */,
+				DADC11741B09814C002A8E88 /* Android_SDK.mp4 in Resources */,
 				DAA686641AEFB18B001576F7 /* Main.storyboard in Resources */,
 				DAA686691AEFB18B001576F7 /* LaunchScreen.xib in Resources */,
 				DAA686D91AF0C9BF001576F7 /* zipfile.zip in Resources */,
 				DAA686D21AF0AE22001576F7 /* text.txt in Resources */,
 				DAA686661AEFB18B001576F7 /* Images.xcassets in Resources */,
+				DA0D318B1B09E1D300ECD2A9 /* xuanchuan.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +433,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BmobFileDemo",
@@ -428,6 +442,7 @@
 				INFOPLIST_FILE = BmobFileDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -435,6 +450,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BmobFileDemo",
@@ -442,6 +459,7 @@
 				INFOPLIST_FILE = BmobFileDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -449,6 +467,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -460,6 +480,7 @@
 				INFOPLIST_FILE = BmobFileDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BmobFileDemo.app/BmobFileDemo";
 			};
 			name = Debug;
@@ -468,6 +489,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -475,6 +498,7 @@
 				INFOPLIST_FILE = BmobFileDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BmobFileDemo.app/BmobFileDemo";
 			};
 			name = Release;

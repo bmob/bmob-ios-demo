@@ -10,12 +10,11 @@
 #import "BmobObject.h"
 #import "BmobConfig.h"
 #import "BmobGeoPoint.h"
+#import "BQLQueryResult.h"
 /**
  * Bmob后台查询类
  */
 @interface BmobQuery : NSObject
-
-
 
 
 //放在这里可以允许用户直接设置
@@ -61,6 +60,8 @@
  *  @return BmobQuery查询对象
  */
 +(BmobQuery*)queryForUser;
+
+-(id)init;
 
 /**
  *	通过className初始化BmobQuery对象
@@ -114,6 +115,14 @@
  *	@param	object	提供的值
  */
 -(void)whereKey:(NSString *)key equalTo:(id)object;
+
+/**
+ *  添加查询列类型为数组的约束条件，只有数组当中包含array的所有元素才匹配
+ *
+ *  @param key   类型为数组的列名
+ *  @param array 需要匹配的元素数组
+ */
+-(void)whereKey:(NSString *)key containsAll:(NSArray*)array;
 
 /**
  *	添加key的值不为object的约束条件
@@ -224,12 +233,6 @@
  *  @param object Bmobject对象
  */
 -(void)whereObjectKey:(NSString *)key relatedTo:(BmobObject*)object;
-
--(void)whereKey:(NSString*)key matchesWithRegex:(NSString*)regex;
-
--(void)whereKey:(NSString *)key startWithString:(NSString*)start;
-
--(void)whereKey:(NSString *)key endWithString:(NSString*)end;
 
 #pragma mark 统计查询
 /**
@@ -396,12 +399,90 @@
  */
 -(void)countObjectsInBackgroundWithBlock:(BmobIntegerResultBlock)block;
 
+#pragma mark BQL 查询方法
+/**
+ *  设置bql语句
+ *
+ *  @param bql bql语句
+ */
+-(void)setBQL:(NSString*)bql;
+
+/**
+ *  设置占位符
+ *
+ *  @param ary 占位符数据
+ */
+-(void)setPlaceholder:(NSArray*)ary;
+
+/**
+ *  使用 BQL 异步查询
+ *  @param bql BQL 字符串
+ *  @param block 查询结果回调
+ */
+- (void)queryInBackgroundWithBQL:(NSString *)bql block:(BmobBQLObjectResultBlock)block;
+
+/**
+ *  使用BQL异步查询，该方法是使用占位符时的调用方法
+ *
+ *  @param bql     BQL字符串
+ *  @param pvalues 占位符的值
+ *  @param block   查询结果回调
+ */
+- (void)queryInBackgroundWithBQL:(NSString *)bql  pvalues:(NSArray*)pvalues block:(BmobBQLObjectResultBlock)block;
+
+/**
+ *  使用BQL异步查询，只有该方法支持异步查询
+ *
+ *  @param block 查询结果回调
+ */
+- (void)queryBQLCanCacheInBackgroundWithblock:(BmobBQLObjectResultBlock)block;
+
+/**
+ * 使用 BQL 异步统计查询
+ *
+ *  @param bql   BQL 统计查询字符串
+ *  @param block 查询结果回调
+ */
+- (void)statisticsInBackgroundWithBQL:(NSString *)bql block:(BmobBQLArrayResultBlock)block;
+
+/**
+ *  使用BQL异步统计查询，该方法是使用占位符时的调用方法
+ *
+ *  @param bql     BQL字符串
+ *  @param pvalues 占位符的值
+ *  @param block   查询结果回调
+ */
+- (void)statisticsInBackgroundWithBQL:(NSString *)bql pvalues:(NSArray*)pvalues block:(BmobBQLArrayResultBlock)block;
 
 /**
  *  取消查询
  */
 -(void)cancle;
 
+# pragma mark 模糊查询
+/**
+ *  正则表达式查询
+ *
+ *  @param key   字段名
+ *  @param regex 正则表达式
+ */
+-(void)whereKey:(NSString*)key matchesWithRegex:(NSString*)regex;
+
+/**
+ *  查询以特定字符串开头的数据
+ *
+ *  @param key   字段名
+ *  @param start 想要查询的开头的字符串
+ */
+-(void)whereKey:(NSString *)key startWithString:(NSString*)start;
+
+/**
+ *  查询以特定字符串结尾的数据
+ *
+ *  @param key 字段名
+ *  @param end 想要查询的结尾的字符串
+ */
+-(void)whereKey:(NSString *)key endWithString:(NSString*)end;
 
 
 @end
