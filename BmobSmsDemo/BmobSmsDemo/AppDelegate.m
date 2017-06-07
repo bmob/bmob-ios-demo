@@ -21,7 +21,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-     [Bmob registerWithAppKey:@""];
+     [Bmob registerWithAppKey:@"];
     //用导致视图时需要添加对应的导航视图控制器
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
    
@@ -33,7 +33,9 @@
     UIView *view = self.navController.view;
     self.navController.view.frame = CGRectMake(view.frame.origin.x, view.frame.origin.y+20, view.frame.size.width, view.frame.size.height);
     NSLog(@"加载前：%f %f %f %f",view.frame.origin.x, view.frame.origin.y+20, view.frame.size.width, view.frame.size.height);
-    [self.window addSubview:navController.view];
+    //[self.window addSubview:navController.view];
+    
+    self.window.rootViewController = self.navController;
     
     [self.window makeKeyAndVisible];
     return YES;

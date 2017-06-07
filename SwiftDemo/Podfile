@@ -1,0 +1,8 @@
+target "SwiftDemo" do
+platform:ios,"8.0"
+use_frameworks!
+
+pod 'BmobSDK','~>1.7.0'
+
+
+end

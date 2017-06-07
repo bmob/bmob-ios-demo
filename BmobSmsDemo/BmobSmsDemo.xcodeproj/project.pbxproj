@@ -237,6 +237,7 @@
 				TargetAttributes = {
 					DA3683231B21A82A00DAD931 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = KUGZ7WW985;
 					};
 					DA36833C1B21A82A00DAD931 = {
 						CreatedOnToolsVersion = 6.3;
@@ -400,6 +401,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KUGZ7WW985;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BmobSmsDemo",
@@ -415,6 +418,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KUGZ7WW985;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BmobSmsDemo",
