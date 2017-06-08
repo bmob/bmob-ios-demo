@@ -17,7 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-//    [Bmob registerWithAppKey:@"e9a111041e3eb44e24b80e1c99573087"];
+
     [Bmob registerWithAppKey:@""];
     
     return YES;
