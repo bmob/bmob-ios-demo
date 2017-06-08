@@ -245,7 +245,7 @@
 				TargetAttributes = {
 					DAA686541AEFB18B001576F7 = {
 						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = ZVBJ5UPUFX;
+						DevelopmentTeam = KUGZ7WW985;
 					};
 					DAA6866D1AEFB18C001576F7 = {
 						CreatedOnToolsVersion = 6.3;
@@ -435,6 +435,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = KUGZ7WW985;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BmobFileDemo",
@@ -452,6 +454,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = KUGZ7WW985;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BmobFileDemo",
