@@ -20,7 +20,7 @@ class ViewController: UIViewController {
 
 //        update()
 
-        deleteGameScore()
+       // deleteGameScore()
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,8 +32,10 @@ class ViewController: UIViewController {
         let query:BmobQuery = BmobUser.query()
         query.order(byDescending: "createdAt")
         query.findObjectsInBackground { (array, error) in
-            for i in 0..<array?.count{
-                let obj :BmobUser = (array[i] as? BmobUser)!
+           // for var i = 0;i<(array?.count)!;++i{
+           // for   var i in 0 ..<array.countdo do {
+            for  i in 0..<array!.count{
+                let obj :BmobUser = (array![i] as? BmobUser)!
                 print("object id \(obj.objectId),username \(obj.username)")
 
             }
@@ -46,11 +48,12 @@ class ViewController: UIViewController {
         gamescore.setObject(90, forKey: "score")
         gamescore.saveInBackground { (isSuccessful, error) in
             if error != nil{
-                print("error is \(error?.localizedDescription)")
+                print("error is \(String(describing: error?.localizedDescription))")
             }else{
                 print("success")
             }
         }
+
     }
 
     func update() {
@@ -58,7 +61,7 @@ class ViewController: UIViewController {
         gamescore.setObject(91, forKey: "score")
         gamescore.updateInBackground { (isSuccessful, error) in
             if error != nil{
-                print("error is \(error?.localizedDescription)")
+                print("error is \(error?.localizedDescription ?? <#default value#>)")
             }else{
                 print("success")
             }
@@ -69,7 +72,7 @@ class ViewController: UIViewController {
         let  gamescore:BmobObject = BmobObject(outDatatWithClassName: "GameScore", objectId: "4faf28f4dd")
         gamescore.deleteInBackground { (isSuccessful, error) in
             if error != nil{
-                print("error is \(error?.localizedDescription)")
+                print("error is \(String(describing: error?.localizedDescription))")
             }else{
                 print("success")
             }

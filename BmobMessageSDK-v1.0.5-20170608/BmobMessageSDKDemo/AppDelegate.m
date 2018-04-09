@@ -17,9 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
+    //1054919887
     [Bmob registerWithAppKey:@"902ae8713c4a090a89623c0e47314f21"];
-
+    //[Bmob registerWithAppKey:@"e9a111041e3eb44e24b80e1c99573087"];
+   //[Bmob registerWithAppKey:@"4cfd396d1b1193fb06ea61492f5b31ef"];
     return YES;
 }
 

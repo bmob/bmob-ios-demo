@@ -34,7 +34,7 @@
     NSString *mobilePhoneNumber = self.mobilePhoneNumberTf.text;
     
     //请求验证码
-    [BmobSMS requestSMSCodeInBackgroundWithPhoneNumber:mobilePhoneNumber andTemplate:nil resultBlock:^(int msgId, NSError *error) {
+    [BmobSMS requestSMSCodeInBackgroundWithPhoneNumber:mobilePhoneNumber andTemplate:@"text2" resultBlock:^(int msgId, NSError *error) {
         if (error) {
             self.smsIdTf.text = error.description;
             NSLog(@"%@",error);
@@ -44,12 +44,26 @@
             self.smsIdTf.text = [NSString stringWithFormat:@"%d", msgId];
         }
     }];
+    
+//    [BmobSMS requestSMSCodeInBackgroundWithPhoneNumber:mobilePhoneNumber andTemplate:@"一心验证短信" resultBlock:^(int number, NSError *error) {
+//        if (error) {
+//                        self.smsIdTf.text = error.description;
+//                        NSLog(@"%@",error);
+//                    } else {
+//                        //获得smsID
+//                        NSLog(@"sms ID：%d",number);
+//                        self.smsIdTf.text = [NSString stringWithFormat:@"%d", number];
+//                    }
+//    }];
 }
 
 - (IBAction)verifySmsCodeBtn:(UIButton *)sender {
+    
     //获取手机号、验证码
     NSString *mobilePhoneNumber = self.mobilePhoneNumberTf.text;
     NSString *smsCode = self.smsCodeTf.text;
+    
+
     
     //验证
     [BmobSMS verifySMSCodeInBackgroundWithPhoneNumber:mobilePhoneNumber andSMSCode:smsCode resultBlock:^(BOOL isSuccessful, NSError *error) {
@@ -84,7 +98,7 @@
 
 - (IBAction)sendContentSMSBtn:(UIButton *)sender {
     NSString *mobilePhoneNumber = self.mobilePhoneNumberTf.text;
-    [BmobSMS requestSMSInbackgroundWithPhoneNumber:mobilePhoneNumber Content:@"测试用例" andSendTime:nil resultBlock:^(int msgId, NSError *error) {
+    [BmobSMS requestSMSInbackgroundWithPhoneNumber:mobilePhoneNumber Content:@"比目啊" andSendTime:nil resultBlock:^(int msgId, NSError *error) {
         if (error) {
             NSLog(@"sendContentSMSBtn-%@",error);
         } else {

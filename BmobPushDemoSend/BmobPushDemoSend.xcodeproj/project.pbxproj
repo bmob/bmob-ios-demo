@@ -220,6 +220,7 @@
 				TargetAttributes = {
 					DA1E8F401AF9B61B009785CA = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = KUGZ7WW985;
 					};
 					DA1E8F591AF9B61B009785CA = {
 						CreatedOnToolsVersion = 6.3;
@@ -399,6 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KUGZ7WW985;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BmobPushDemoSend",
@@ -413,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KUGZ7WW985;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BmobPushDemoSend",
