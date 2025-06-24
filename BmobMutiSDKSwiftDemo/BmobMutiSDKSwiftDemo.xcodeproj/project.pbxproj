@@ -11,7 +11,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		3005298F2E0A879F00007422 /* Exceptions for "BmobMutiSDKSwiftDemo" folder in "BmobMutiSDKSwiftDemo" target */ = {
+		30052D6F2E0A979500007422 /* Exceptions for "BmobMutiSDKSwiftDemo" folder in "BmobMutiSDKSwiftDemo" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			additionalCompilerFlagsByRelativePath = {
 				"BmobSDK/Utilities（基础工具）/Network（网络）/BmobReachability.m" = "-fno-objc-arc";
@@ -25,7 +25,7 @@
 		300527332E0A80AA00007422 /* BmobMutiSDKSwiftDemo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				3005298F2E0A879F00007422 /* Exceptions for "BmobMutiSDKSwiftDemo" folder in "BmobMutiSDKSwiftDemo" target */,
+				30052D6F2E0A979500007422 /* Exceptions for "BmobMutiSDKSwiftDemo" folder in "BmobMutiSDKSwiftDemo" target */,
 			);
 			path = BmobMutiSDKSwiftDemo;
 			sourceTree = "<group>";
@@ -283,6 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = magic.BmobMutiSDKSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/BmobMutiSDKSwiftDemo/BmobMutiSDKSwiftDemoApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,6 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = magic.BmobMutiSDKSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/BmobMutiSDKSwiftDemo/BmobMutiSDKSwiftDemoApp-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

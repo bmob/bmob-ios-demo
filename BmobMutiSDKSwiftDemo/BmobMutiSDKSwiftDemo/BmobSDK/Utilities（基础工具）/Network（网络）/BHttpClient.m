@@ -145,7 +145,7 @@ totalBytesExpectedToSend:(int64_t)totalBytesExpectedToSend {
         //判断返回状态码错误。
         if(!task || !task.response){
             if (_failureBlock) {
-                NSError *upError = [NSError errorWithDomain:@"cn.bmob.www" code:20002 userInfo:@{NSLocalizedDescriptionKey:@"connect failed"}];
+                NSError *upError = [NSError errorWithDomain:kErrorDomain code:20002 userInfo:@{NSLocalizedDescriptionKey:@"connect failed"}];
                 _failureBlock(upError);
             }
         }else{
@@ -158,7 +158,7 @@ totalBytesExpectedToSend:(int64_t)totalBytesExpectedToSend {
             }else{
 
                 if (_failureBlock) {
-                    NSError *upError = [NSError errorWithDomain:@"cn.bmob.www" code:statusCode userInfo:@{NSLocalizedDescriptionKey:@"connect failed"}];
+                    NSError *upError = [NSError errorWithDomain:kErrorDomain code:statusCode userInfo:@{NSLocalizedDescriptionKey:@"connect failed"}];
                     _failureBlock(upError);
                 }
             }

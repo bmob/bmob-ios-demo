@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "Bmob.h"
-
 //! Project version number for BmobSDK.
 FOUNDATION_EXPORT double BmobSDKVersionNumber;
 

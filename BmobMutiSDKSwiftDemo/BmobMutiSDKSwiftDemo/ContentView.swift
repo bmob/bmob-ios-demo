@@ -20,10 +20,17 @@ struct ContentView: View {
             Text("Hello, world!")
             
             Button("测试查询用户表") {
+                print("开始查询用户表...")
                 let query = BmobQuery(className: "_User")
+                print("query对象创建状态: \(query != nil ? "成功" : "失败")")
+                
                 query?.findObjectsInBackground { array, error in
+                    print("进入查询回调...")
                     if let error = error {
-                        print("查询失败: \(error.localizedDescription)")
+                        print("查询失败，错误详情:")
+                        print("错误码: \(error._code)")
+                        print("错误信息: \(error.localizedDescription)")
+                        print("原始错误: \(error)")
                     } else if let users = array {
                         print("查询成功，用户数量: \(users.count)")
                         for user in users {
@@ -31,6 +38,8 @@ struct ContentView: View {
                                 print("用户信息: \(user.description)")
                             }
                         }
+                    } else {
+                        print("查询结果为空，且没有错误信息")
                     }
                 }
             }
