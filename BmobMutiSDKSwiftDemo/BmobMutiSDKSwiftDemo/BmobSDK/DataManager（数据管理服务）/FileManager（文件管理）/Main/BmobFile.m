@@ -219,24 +219,11 @@ static NSString *kUPYun = @"upyun";
         return;
     }
     
-    
-    //如果本地没有版本或者本地的版本小于服务器的版本，则先调用cdn接口获取数据
-    if (![SDKHostUtil upyunVersion] || [[SDKHostUtil upyunVersion] intValue] < [BmobManager defaultManager].upyunVersion || ![SDKHostUtil upyunName] || [SDKHostUtil upyunName].length == 0) {
-        [self cdnHostAndUploadFileWithFilename:fileName
-                                          data:data
-                                    completion:block
-                                      progress:progressBlock];
-    }else{
-    
-        self.upyunCDN.domin = [SDKHostUtil upyunHost];
-        self.upyunCDN.key = [SDKHostUtil upyunKey];
-        self.upyunCDN.name = [SDKHostUtil upyunName];
-        
-        [self uploadFileWithFilename:fileName
-                                data:data
-                          completion:block
-                            progress:progressBlock];
-    }
+    // 每次上传前都获取最新的CDN信息
+    [self cdnHostAndUploadFileWithFilename:fileName
+                                    data:data
+                              completion:block
+                                progress:progressBlock];
 }
 
 -(void)cdnHostAndUploadFileWithFilename:(NSString *)filename
