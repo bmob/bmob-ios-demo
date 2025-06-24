@@ -7,19 +7,33 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		3098A2D52E0A3DF100B53D5F /* BmobMutiSDKSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BmobMutiSDKSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		300527312E0A80AA00007422 /* BmobMutiSDKSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BmobMutiSDKSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3005298F2E0A879F00007422 /* Exceptions for "BmobMutiSDKSwiftDemo" folder in "BmobMutiSDKSwiftDemo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			additionalCompilerFlagsByRelativePath = {
+				"BmobSDK/Utilities（基础工具）/Network（网络）/BmobReachability.m" = "-fno-objc-arc";
+				"BmobSDK/Utilities（基础工具）/OpenUDID（UDID码）/BmobOpenUDID.m" = "-fno-objc-arc";
+			};
+			target = 300527302E0A80AA00007422 /* BmobMutiSDKSwiftDemo */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		3098A2D72E0A3DF100B53D5F /* BmobMutiSDKSwiftDemo */ = {
+		300527332E0A80AA00007422 /* BmobMutiSDKSwiftDemo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3005298F2E0A879F00007422 /* Exceptions for "BmobMutiSDKSwiftDemo" folder in "BmobMutiSDKSwiftDemo" target */,
+			);
 			path = BmobMutiSDKSwiftDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3098A2D22E0A3DF100B53D5F /* Frameworks */ = {
+		3005272E2E0A80AA00007422 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -29,18 +43,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3098A2CC2E0A3DF100B53D5F = {
+		300527282E0A80AA00007422 = {
 			isa = PBXGroup;
 			children = (
-				3098A2D72E0A3DF100B53D5F /* BmobMutiSDKSwiftDemo */,
-				3098A2D62E0A3DF100B53D5F /* Products */,
+				300527332E0A80AA00007422 /* BmobMutiSDKSwiftDemo */,
+				300527322E0A80AA00007422 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		3098A2D62E0A3DF100B53D5F /* Products */ = {
+		300527322E0A80AA00007422 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3098A2D52E0A3DF100B53D5F /* BmobMutiSDKSwiftDemo.app */,
+				300527312E0A80AA00007422 /* BmobMutiSDKSwiftDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,64 +62,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3098A2D42E0A3DF100B53D5F /* BmobMutiSDKSwiftDemo */ = {
+		300527302E0A80AA00007422 /* BmobMutiSDKSwiftDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3098A2E42E0A3DF300B53D5F /* Build configuration list for PBXNativeTarget "BmobMutiSDKSwiftDemo" */;
+			buildConfigurationList = 3005273F2E0A80AC00007422 /* Build configuration list for PBXNativeTarget "BmobMutiSDKSwiftDemo" */;
 			buildPhases = (
-				3098A2D12E0A3DF100B53D5F /* Sources */,
-				3098A2D22E0A3DF100B53D5F /* Frameworks */,
-				3098A2D32E0A3DF100B53D5F /* Resources */,
+				3005272D2E0A80AA00007422 /* Sources */,
+				3005272E2E0A80AA00007422 /* Frameworks */,
+				3005272F2E0A80AA00007422 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				3098A2D72E0A3DF100B53D5F /* BmobMutiSDKSwiftDemo */,
+				300527332E0A80AA00007422 /* BmobMutiSDKSwiftDemo */,
 			);
 			name = BmobMutiSDKSwiftDemo;
 			packageProductDependencies = (
 			);
 			productName = BmobMutiSDKSwiftDemo;
-			productReference = 3098A2D52E0A3DF100B53D5F /* BmobMutiSDKSwiftDemo.app */;
+			productReference = 300527312E0A80AA00007422 /* BmobMutiSDKSwiftDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3098A2CD2E0A3DF100B53D5F /* Project object */ = {
+		300527292E0A80AA00007422 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					3098A2D42E0A3DF100B53D5F = {
+					300527302E0A80AA00007422 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
-			buildConfigurationList = 3098A2D02E0A3DF100B53D5F /* Build configuration list for PBXProject "BmobMutiSDKSwiftDemo" */;
+			buildConfigurationList = 3005272C2E0A80AA00007422 /* Build configuration list for PBXProject "BmobMutiSDKSwiftDemo" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 3098A2CC2E0A3DF100B53D5F;
+			mainGroup = 300527282E0A80AA00007422;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 3098A2D62E0A3DF100B53D5F /* Products */;
+			productRefGroup = 300527322E0A80AA00007422 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3098A2D42E0A3DF100B53D5F /* BmobMutiSDKSwiftDemo */,
+				300527302E0A80AA00007422 /* BmobMutiSDKSwiftDemo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		3098A2D32E0A3DF100B53D5F /* Resources */ = {
+		3005272F2E0A80AA00007422 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -115,7 +129,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3098A2D12E0A3DF100B53D5F /* Sources */ = {
+		3005272D2E0A80AA00007422 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -125,7 +139,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		3098A2E22E0A3DF300B53D5F /* Debug */ = {
+		3005273D2E0A80AC00007422 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -177,16 +191,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		3098A2E32E0A3DF300B53D5F /* Release */ = {
+		3005273E2E0A80AC00007422 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -232,115 +248,98 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		3098A2E52E0A3DF300B53D5F /* Debug */ = {
+		300527402E0A80AC00007422 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = BmobMutiSDKSwiftDemo/BmobMutiSDKSwiftDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BmobMutiSDKSwiftDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = RB8X4D9S9S;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BmobMutiSDKSwiftDemo/BmobSDK/Unrelated/BmobSDK-Prefix.pch";
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = magic.BmobMutiSDKSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "BmobMutiSDKSwiftDemo/BmobSwift-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		3098A2E62E0A3DF300B53D5F /* Release */ = {
+		300527412E0A80AC00007422 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = BmobMutiSDKSwiftDemo/BmobMutiSDKSwiftDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BmobMutiSDKSwiftDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = RB8X4D9S9S;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/BmobMutiSDKSwiftDemo/BmobSDK/Unrelated/BmobSDK-Prefix.pch";
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = magic.BmobMutiSDKSwiftDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "BmobMutiSDKSwiftDemo/BmobSwift-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				XROS_DEPLOYMENT_TARGET = 2.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3098A2D02E0A3DF100B53D5F /* Build configuration list for PBXProject "BmobMutiSDKSwiftDemo" */ = {
+		3005272C2E0A80AA00007422 /* Build configuration list for PBXProject "BmobMutiSDKSwiftDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3098A2E22E0A3DF300B53D5F /* Debug */,
-				3098A2E32E0A3DF300B53D5F /* Release */,
+				3005273D2E0A80AC00007422 /* Debug */,
+				3005273E2E0A80AC00007422 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3098A2E42E0A3DF300B53D5F /* Build configuration list for PBXNativeTarget "BmobMutiSDKSwiftDemo" */ = {
+		3005273F2E0A80AC00007422 /* Build configuration list for PBXNativeTarget "BmobMutiSDKSwiftDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3098A2E52E0A3DF300B53D5F /* Debug */,
-				3098A2E62E0A3DF300B53D5F /* Release */,
+				300527402E0A80AC00007422 /* Debug */,
+				300527412E0A80AC00007422 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3098A2CD2E0A3DF100B53D5F /* Project object */;
+	rootObject = 300527292E0A80AA00007422 /* Project object */;
 }

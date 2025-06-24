@@ -1,0 +1,44 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#endif
+
+//#warning 注意修改版本号
+#define kBmobSDKVersion  @"v2.4.1"
+
+#define kErrorDomain @"cn.bmob.www"
+
+#define ServerStatusCodeSucessful  20001
+
+#define kTimeout  20 //网络请求超时时间
+#define kTotalTryConnectCount 3 //重连次数
+
+typedef void(^BmobReadDataResultBlock)(short statueCode, NSData *data);
+
+typedef void(^BmobDictionaryBlock)(NSDictionary *dictionary,int mid);
+
+#define BmobDebug 0
+//#define BmobDebug 1
+
+
+#if BmobDebug
+#define debugLog(...) NSLog(__VA_ARGS__)
+#define PrintMethodNameStart() NSLog(@"%s-----start", __func__)
+#define PrintMethodNameEnd() NSLog(@"%s-----end", __func__)
+#else
+#define debugLog(...) 
+#define PrintMethodNameStart()
+#define PrintMethodNameEnd()
+#endif
+
+#define kBmobSessionToken @"kBmobSessionToken"
+#define kBmobSessionTokenPre @"b_Bmob_sessionToken"
+
+static NSString *kDataDicKey = @"dataDic";//kvc 管理dataDic
+static NSString *kHostsSavedLocalPath = @"BmobAPIHosts.plist";
