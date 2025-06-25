@@ -1,0 +1,76 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+## 1. 项目结构
+
+- 本项目为 Bmob iOS 多功能演示 Demo，采用 SwiftUI 实现，集成 Bmob Objective-C SDK。
+- 主要目录和文件：
+  - `BmobMutiSDKSwiftDemo/BmobMutiSDKSwiftDemo/`：SwiftUI 视图、入口、桥接头等
+  - `BmobMutiSDKSwiftDemo/BmobMutiSDKSwiftDemo/BmobSDK/`：Bmob Objective-C SDK 源码
+  - 每个功能模块（如数据库、用户、文件、短信、推送、地理、关系、ACL、统计、其他）均有独立 SwiftUI 页面（如 DatabaseView.swift、UserView.swift 等）
+
+## 2. 主要功能页面
+
+- 首页（HomeView.swift）：导航到各功能页面
+- 数据库操作（DatabaseView.swift）：演示 Chat 表的增删改查
+- 用户管理（UserView.swift）：注册、登录、查询、更新、登出、查询所有用户
+- 文件管理（FileView.swift）：上传、下载、删除文件
+- 短信服务（SMSView.swift）：发送、验证短信验证码
+- 推送服务（PushView.swift）：推送消息
+- 地理位置（GeoView.swift）：地理位置的增查
+- 关系关联（RelationView.swift）：Pointer/Relation 增查
+- ACL 权限管理（ACLView.swift）：设置公开、私有、角色权限
+- 统计与分组（StatisticsView.swift）：总和、平均、最大、最小、分组统计
+- 其他功能（OtherView.swift）：云函数、支付、服务器时间、网络超时设置
+
+## 3. 数据表结构（重点表）
+
+### Chat 表
+- `avatarUrl`：String，头像地址
+- `content`：String，聊天内容
+- `nickName`：String，昵称
+- `own`：Pointer(_User)，关联用户表
+- `createdAt`：Date，系统字段，创建时间
+- `updatedAt`：Date，系统字段，更新时间
+
+### _User 表
+- `username`：String，用户名
+- `password`：String，密码（仅用于注册/登录，不可查询）
+- `email`：String，邮箱地址
+- `emailVerified`：Bool，邮箱是否已验证
+- `mobilePhoneNumber`：String，手机号
+- `mobilePhoneNumberVerified`：Bool，手机号是否已验证
+- `authData`：Object，第三方登录信息
+- `objectId`：String，用户唯一标识，系统字段
+- `createdAt`：Date，创建时间，系统字段
+- `updatedAt`：Date，更新时间，系统字段
+
+## 4. 开发约定
+
+- 所有 SwiftUI 页面均带中文注释，便于理解和维护。
+- Bmob SDK 相关调用通过桥接头（BmobMutiSDKSwiftDemoApp-Bridging-Header.h）引入 Objective-C 头文件。
+- Pointer 关联、Relation 关联、ACL 权限等均按 Bmob 官方文档标准用法实现。
+- 所有异步操作均在主线程回调 UI。
+- 查询、增删改查等操作均有错误处理和结果展示。
+
+## 5. 常见注意事项
+
+- BmobQuery 设置 limit 用 `query?.limit = n`，不是 `setLimit`。
+- BmobFile 删除需用 `BmobFile(filePath:)`，不是 `BmobFile(url:)`。
+- BmobACL 权限设置方法需用 `setPublicReadAccess()`、`setReadAccessForUser(user)` 等。
+- BmobUser 当前用户获取用 `BmobUser.currentUser()`。
+- BmobSMS 发送/验证验证码方法为 `requestCodeInBackground(withPhoneNumber:andTemplate:resultBlock:)` 和 `verifySMSCodeInBackground(withPhoneNumber:andSMSCode:resultBlock:)`。
+- 所有表的 objectId、createdAt、updatedAt 为系统字段，自动维护。
+
+## 6. 代码风格
+
+- 统一使用 Swift 5 语法，UI 采用 SwiftUI。
+- 变量、方法命名见名知意，遵循驼峰命名法。
+- 重要操作、易错点均有中文注释说明。
+
+## 7. 适用场景
+
+- 本项目适合 Bmob SDK 新手、iOS 开发者快速了解和测试 Bmob 各项功能。
+- 可作为 Bmob iOS 项目的功能参考模板。
